@@ -1,9 +1,12 @@
+/* Base App Styles */
 .App {
   text-align: center;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -13,21 +16,101 @@
   }
 }
 
+/* Header Styling */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Main Content */
+.main {
+  min-height: calc(100vh - 63px);
+  padding: 5px;
+  margin: 0px 10px 0px 10px;
+}
+
+/* Header Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light & Dark Mode Classes */
+.dark-mode {
+  background-color: #36454f;
+  color: #fdfbd4;
+}
+
+.light-mode {
+  background-color: #fdfbd4;
+  color: #36454f;
+}
+
+/* Header/Footer Theming */
+.dark-mode .App-header,
+.dark-mode .footer {
+  background-color: #2c3e50;
+  color: #fdfbd4;
+}
+
+.light-mode .App-header,
+.light-mode .footer {
+  background-color: #fdfbd4;
+  color: #36454f;
+}
+
+/* Button Styling */
+#btn {
+  font-size: 16px;
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: 2px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  vertical-align: middle;
+}
+#btn svg {
+  font-size: 18px;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.dark-mode {
+  background-color: #fdfbd4;
+  color: #36454f;
+  border-color: #fdfbd4;
+}
+
+.light-mode {
+  background-color: #36454f;
+  color: #fdfbd4;
+  border-color: #36454f;
+}
+
+/* App-link */
 .App-link {
   color: #61dafb;
 }
 
+/* Logo animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
