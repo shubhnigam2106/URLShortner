@@ -53,13 +53,13 @@
 
 /* Light & Dark Mode Classes */
 .dark-mode {
-  background-color: #36454f;
+  background-color: #383838;
   color: #fdfbd4;
 }
 
 .light-mode {
   background-color: #fdfbd4;
-  color: #36454f;
+  color: #383838;
 }
 
 /* Header/Footer Theming */
@@ -72,7 +72,7 @@
 .light-mode .App-header,
 .light-mode .footer {
   background-color: #fdfbd4;
-  color: #36454f;
+  color: #383838;
 }
 
 /* Button Styling */
@@ -95,14 +95,14 @@
 
 .dark-mode {
   background-color: #fdfbd4;
-  color: #36454f;
+  color: #383838;
   border-color: #fdfbd4;
 }
 
 .light-mode {
-  background-color: #36454f;
+  background-color: #383838;
   color: #fdfbd4;
-  border-color: #36454f;
+  border-color: #383838;
 }
 
 /* App-link */
